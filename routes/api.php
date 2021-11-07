@@ -18,7 +18,9 @@ Route::middleware('auth:api')->group(function () {
     Route::namespace('App\Http\Controllers\API')->group(function () {
         Route::get('loans', 'LoanController@getLoans');
         Route::post('loans', 'LoanController@submitLoanApplication');
+        Route::get('loans/{loan}', 'LoanController@showLoan');
         Route::put('loans/{loan}/approve', 'LoanController@approveLoanApplication');
-        Route::post('repayments', 'LoanController@submitRepayment');
+        Route::get('loans/{loan}/repayments', 'LoanController@getRepayments');
+        Route::post('loans/{loan}/repayments', 'LoanController@submitRepayment');
     });
 });

@@ -16,8 +16,7 @@ class CreateRepaymentsTable extends Migration
         Schema::create('repayments', function (Blueprint $table) {
             $table->id();
             $table->foreignId('loan_id')->constrained('loans');
-            $table->float('required_paid_amount')->nullable();
-            $table->float('actual_paid_amount')->nullable();
+            $table->float('amount')->nullable();
             $table->dateTime('paid_date')->nullable();
             $table->timestamps();
         });

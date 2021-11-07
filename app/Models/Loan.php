@@ -15,4 +15,9 @@ class Loan extends Model
     {
         return $this->belongsTo(User::class, 'user_id');
     }
+
+    public function repayments()
+    {
+        return $this->hasMany(Repayment::class);
+    }
 }
