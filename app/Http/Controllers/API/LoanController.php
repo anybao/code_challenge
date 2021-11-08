@@ -62,7 +62,15 @@ class LoanController extends ApiController
 
         $data = $request->only(['required_amount', 'loan_term']);
 
-        $loan = $this->loanRepo->create(array_merge($data, ['user_id' => auth()->id(), 'weekly_paid_amount' => $weeklyPaidAmount]));
+        $loan = $this->loanRepo->create(array_merge($data,
+            [
+                'user_id' => auth()->id(),
+                'weekly_paid_amount' => $weeklyPaidAmount,
+                'paid_amount' => 0,
+                'remain_amount' => data_get($request, 'required_amount'),
+                'is_paid' => 0,
+            ]
+        ));
 
         return $this->respond([new LoanResource($loan)], 201, 'Success to submit loan application');
     }
