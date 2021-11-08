@@ -67,6 +67,7 @@ class LoanController extends ApiController
                 'user_id' => auth()->id(),
                 'weekly_paid_amount' => $weeklyPaidAmount,
                 'paid_amount' => 0,
+                'status' => 'pending',
                 'remain_amount' => data_get($request, 'required_amount'),
                 'is_paid' => 0,
             ]
