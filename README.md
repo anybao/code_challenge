@@ -25,4 +25,3 @@ need to check if the dates are correct but will just set the weekly amount to be
 ## Deployment and Docs
 * Git Repo: https://github.com/anybao/aspire_code_challenge
 * Postman Docs: https://documenter.getpostman.com/view/8444459/UVC3jTGS
-* Deployment testing website: http://aspirevietnamcodechallenge.quanghuyvn.com
