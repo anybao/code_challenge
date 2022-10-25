@@ -16,7 +16,7 @@ After the loan is approved, the user must be able to submit the weekly loan repa
 need to check if the dates are correct but will just set the weekly amount to be repaid.
 
 ## How to run
-- Git clone https://github.com/anybao/aspire_code_challenge
+- Git clone https://github.com/anybao/code_challenge
 - Composer install
 - php artisan migrate
 - php artisan passport install
