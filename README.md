@@ -7,7 +7,6 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
 </p>
 
-## Aspire Vietnam Coding Challenge
 
 ## Introduction
 It is an app that allows authenticated users to go through a loan application. It doesn’t have to contain too many fields, but at least “amount
